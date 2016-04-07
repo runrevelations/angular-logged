@@ -1,0 +1,32 @@
+<div class="container-fluid">
+
+  <!-- Navbar directive -->
+  <main-navbar></main-navbar>
+
+  <!-- Alert message -->
+  <p class="alert alert-success" id="reg-alert-success" ng-if="register.loggedIn()">Already registered and logged in</p>
+
+  <!-- Registration form -->
+  <div class="register-form jumbotron text-center" ng-hide="register.loggedIn()">
+    <h1>Registration</h1>
+    <form name="formData" ng-submit="register.registerUser(register.user)"class="form-group">
+    <br/>
+      <label for="firstName">First name</label>
+        <input type="text" ng-model="register.user.firstName" name="firstName" class="form-control" required />
+      <br/>
+      <label for="lastName">Last name</label>
+        <input type="text" ng-model="register.user.lastName" name="lasttName" class="form-control" required />
+      <br/>
+      <label for="email">Email</label>
+        <input type="email" ng-model="register.user.email" name="email" class="form-control" required />
+      <br/>
+      <label for="password">Password</label>
+        <input type="password" ng-model="register.user.password" name="password" class="form-control" required />
+      <br/>
+      <label for="passwordConfirm">Password confirmation</label>
+        <input type="password" ng-model="passwordConfirm" name="passwordConfirm" class="form-control" required checkPassword="register.user.password" />
+      <br/>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,213 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+$main-gold: #ffb85f;
+$main-red: #d9534f;
+$main-blue: #00a1d8;
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+
+body {
+	background: $main-gold;
+}
+
+.jumbotron {
+	background: $main-blue;
+	h1 {
+		color: white;
+	}
+}
+
+#glyphicon-sunglasses {
+	font-size: 200px;
+}
+
+#bs-example-navbar-collapse-6 {
+	border-top: 0 solid $main-blue;
+	a {
+		font-size: 1.5em;
+		color: white;
+	}
+	a:active {
+		color: white;
+		background: $main-red;
+	}
+}
+
+.glyphicon {
+	font-size: .85em;
+}
+
+#dashboard-friends-button {
+	width: 40%;
+	//height: 3.5em;
+	font-size: 60%;
+}
+
+#dashboard-profile-button {
+	width: 40%;
+	//height: 3.5em;
+	font-size: 60%;
+}
+
+#dashboard-profile-info {
+	h1{
+		color: $main-red;
+	}
+	h4 {
+		color: white;
+		border-bottom: 1px solid $main-blue;
+		padding-bottom: 6px;
+	}
+}
+
+#dashboard-friends-title {
+	color: $main-blue;
+}
+
+.dashboard-friends-th {
+	color: $main-red;
+	font-size: 20px;
+}
+
+.login-form {
+	label {
+		font-size: 15px;
+	}
+	input, input:focus {
+		box-shadow: none;
+		border: none;
+		text-align: center;
+		font-size: 20px;
+	}
+	button {
+		border: 0;
+		background: $main-gold;
+		font-size: 20px;
+		color: $main-red
+	}
+}
+
+.register-form {
+	label {
+		font-size: 15px;
+	}
+	input, input:focus {
+		box-shadow: none;
+		border: none;
+		text-align: center;
+		font-size: 20px;
+	}
+	button {
+		border: 0;
+		background: $main-gold;
+		font-size: 20px;
+		color: $main-red
+	}
+}
+
+.navbar {
+  background: $main-blue;
+  border-bottom: 0;
+
+  .active-nav-home {
+  	background: $main-red;
+  }
+
+  .icon-bar {
+  	background: white !important;
+  }
+
+  .navbar-toggle {
+  	background: $main-red;
+  	border: none;
+  }
+  .navbar-toggle:focus {
+    background: $main-red;
+  	border: none;
+  }
+  .navbar-toggle:hover {
+  	background: $main-red;
+  	border: none;
+  }
+
+  .navbar-brand, .navbar-brand:focus  {
+  	background: $main-red;
+  	color: white;
+  	font-size: 1.5em;
+  }
+  .navbar-brand:hover {
+  	background: $main-blue;
+  	color: white;
+  }
+
+}
+
+#main-text {
+	color: white;
+}
+
+#delete-profile-text {
+	color: white;
+}
+
+// register and login
+#reg-alert-success {
+	background: $main-blue;
+	border: 0;
+	color: white;
+}
+
+.log-debug-alert {
+	background: $main-red;
+	color: white;
+}
+
+.thumbnail {
+  height: 180px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+
+
+/*-------------------------------------------------------------------------------------
+------------------------------------IPAD AND ABOVE------------------------------------*/
+@media screen and (min-width: 900px) {
+
+#dashboard-friends-button {
+ 
+	width: 40%;
+	font-size: 60%;
+}
+
+#dashboard-profile-button {
+	width: 40%;
+	//height: 3.5em;
+	font-size: 60%;
+}
+
+
+}
+
+
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

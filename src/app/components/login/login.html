@@ -1,0 +1,21 @@
+<div class="container-fluid">
+
+  <!-- Navbar directive -->
+  <main-navbar ></main-navbar>
+
+  <!-- Flash message -->
+  <p class="alert alert-success" id="reg-alert-success" ng-if="login.loggedIn()">Already logged In</p>
+
+  <!-- Login form -->
+  <div class="login-form jumbotron text-center" ng-hide="login.loggedIn()">
+    <h1>Login</h1>
+    <form class="form-group" ng-submit="login.userLogin(login.user)">
+      <label for="email">Email</label>
+        <input type="email" ng-model="login.user.email" class="form-control" required="">
+      <label for="password">Password</label>
+        <input type="password" ng-model="login.user.password" class="form-control">
+        <br/>
+      <button type="submit" id="login-button" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container-fluid" ng-hide="!dashboard.loggedIn()">
+  <h1 class="text-center" id="dashboard-friends-title"> User List </h1>
+    <br>
+  <table class="table text-center">
+    <thead>
+      <tr>
+        <th class="dashboard-friends-th text-center">First Name</th>
+        <th class="dashboard-friends-th text-center">Last Name</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="user in dashboard.allUsers">
+    	<td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+    </tbody>
+  </table>
+</div>

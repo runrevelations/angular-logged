@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  
+  <!-- Navbar directive -->
+  <main-navbar ></main-navbar>
+  
+  <!-- Main jumbotron -->
+  <div class="jumbotron text-center" ng-hide="main.loggedIn()">
+    <h1>Ng-Logged</h1>
+      <p class="glyphicon glyphicon-sunglasses text-center" id="glyphicon-sunglasses"></p>
+        <h3 class="text-center" id="main-text">
+          The coolest frontend client period.
+        </h3>
+      <button type="button" class="btn btn-lg btn-success" id="main-signup-button" ui-sref="register">Sign Up!</button>
+  </div>
+</div>

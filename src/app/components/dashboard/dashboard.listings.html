@@ -1,0 +1,11 @@
+<div class="container-fluid" ng-hide="!dashboard.loggedIn()">
+  <div id="dashboard-profile-info">
+    <h1 class="text-center">User Id</h1>
+      <h4 class="text-center">{{dashboard.currentUserId}}</h4>
+    <h1 class="text-center">Name</h1>
+      <h4 class="text-center">{{ dashboard.currentUserFullName }}</h4>
+    <h1 class="text-center">Email</h1>
+      <h4 class="text-center">{{ dashboard.currentUserEmail }}</h4>
+  </div>
+</div>
+

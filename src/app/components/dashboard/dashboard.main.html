@@ -1,0 +1,21 @@
+<div class="container-fluid">
+
+  <!-- Navbar directive -->
+  <main-navbar></main-navbar>
+  
+  <!-- Jumbotron -->
+  <div class="jumbotron" ng-hide="!dashboard.loggedIn()">
+    <div class="container text-center">
+      <p class="glyphicon glyphicon-sunglasses text-center" id="glyphicon-sunglasses"></p>
+	    <h1>Hello: {{dashboard.currentUserFullName}}<h1>
+	    <div>
+	      <button class="btn btn-danger text-center" id="dashboard-friends-button" ui-sref="dashboard.friends">FRIENDS</button>
+	      <button class="btn btn-warning text-center" id="dashboard-profile-button" ui-sref="dashboard.listings">PROFILE</button>
+	    </div>
+	  </div>
+  </div>
+
+    <!-- Dashboard nested view -->
+  <ui-view></ui-view>
+    <br>
+</div>

@@ -49,9 +49,9 @@
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard'
       })
-      .state('dashboard.listings', {
-        url: '/listings',
-        templateUrl: 'app/components/dashboard/dashboard.listings.html'
+      .state('dashboard.profile', {
+        url: '/profile',
+        templateUrl: 'app/components/dashboard/dashboard.profile.html'
       });
 
     $urlRouterProvider.otherwise('/');
